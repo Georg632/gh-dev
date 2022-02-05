@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "node-note": "apps/node-note",
+    "node-note-e2e": "apps/node-note-e2e"
+  }
+}
