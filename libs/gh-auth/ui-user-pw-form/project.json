@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/gh-auth/ui-user-pw-form",
+  "sourceRoot": "libs/gh-auth/ui-user-pw-form/src",
+  "prefix": "gh-dev",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/gh-auth/ui-user-pw-form"],
+      "options": {
+        "jestConfig": "libs/gh-auth/ui-user-pw-form/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/gh-auth/ui-user-pw-form/src/**/*.ts",
+          "libs/gh-auth/ui-user-pw-form/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

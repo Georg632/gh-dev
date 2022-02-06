@@ -1,7 +1,16 @@
 {
   "version": 2,
   "projects": {
+    "gh-auth-data-access-auth": "libs/gh-auth/data-access-auth",
+    "gh-auth-feature-login-user": "libs/gh-auth/feature-login-user",
+    "gh-auth-ui-user-pw-form": "libs/gh-auth/ui-user-pw-form",
+    "nn-notes-data-access-notes": "libs/nn-notes/data-access-notes",
+    "nn-notes-feature-note-crud": "libs/nn-notes/feature-note-crud",
+    "nn-notes-feature-note-list": "libs/nn-notes/feature-note-list",
     "node-note": "apps/node-note",
-    "node-note-e2e": "apps/node-note-e2e"
+    "node-note-e2e": "apps/node-note-e2e",
+    "shared-ui-markdown-editor": "libs/shared/ui-markdown-editor",
+    "shared-ui-markdown-viewer": "libs/shared/ui-markdown-viewer",
+    "shared-ui-quill-editor": "libs/shared/ui-quill-editor"
   }
 }

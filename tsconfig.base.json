@@ -14,7 +14,35 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@gh-dev/gh-auth/data-access-auth": [
+        "libs/gh-auth/data-access-auth/src/index.ts"
+      ],
+      "@gh-dev/gh-auth/feature-login-user": [
+        "libs/gh-auth/feature-login-user/src/index.ts"
+      ],
+      "@gh-dev/gh-auth/ui-user-pw-form": [
+        "libs/gh-auth/ui-user-pw-form/src/index.ts"
+      ],
+      "@gh-dev/nn-notes/data-access-notes": [
+        "libs/nn-notes/data-access-notes/src/index.ts"
+      ],
+      "@gh-dev/nn-notes/feature-note-crud": [
+        "libs/nn-notes/feature-note-crud/src/index.ts"
+      ],
+      "@gh-dev/nn-notes/feature-note-list": [
+        "libs/nn-notes/feature-note-list/src/index.ts"
+      ],
+      "@gh-dev/shared/ui-markdown-editor": [
+        "libs/shared/ui-markdown-editor/src/index.ts"
+      ],
+      "@gh-dev/shared/ui-markdown-viewer": [
+        "libs/shared/ui-markdown-viewer/src/index.ts"
+      ],
+      "@gh-dev/shared/ui-quill-editor": [
+        "libs/shared/ui-quill-editor/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

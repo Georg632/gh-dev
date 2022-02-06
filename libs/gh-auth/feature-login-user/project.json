@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/gh-auth/feature-login-user",
+  "sourceRoot": "libs/gh-auth/feature-login-user/src",
+  "prefix": "gh-dev",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/gh-auth/feature-login-user"],
+      "options": {
+        "jestConfig": "libs/gh-auth/feature-login-user/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/gh-auth/feature-login-user/src/**/*.ts",
+          "libs/gh-auth/feature-login-user/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

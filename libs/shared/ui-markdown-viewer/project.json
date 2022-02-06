@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/ui-markdown-viewer",
+  "sourceRoot": "libs/shared/ui-markdown-viewer/src",
+  "prefix": "gh-dev",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/ui-markdown-viewer"],
+      "options": {
+        "jestConfig": "libs/shared/ui-markdown-viewer/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/ui-markdown-viewer/src/**/*.ts",
+          "libs/shared/ui-markdown-viewer/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

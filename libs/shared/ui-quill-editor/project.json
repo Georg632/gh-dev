@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/ui-quill-editor",
+  "sourceRoot": "libs/shared/ui-quill-editor/src",
+  "prefix": "gh-dev",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/ui-quill-editor"],
+      "options": {
+        "jestConfig": "libs/shared/ui-quill-editor/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/ui-quill-editor/src/**/*.ts",
+          "libs/shared/ui-quill-editor/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

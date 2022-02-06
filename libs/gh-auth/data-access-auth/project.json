@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/gh-auth/data-access-auth",
+  "sourceRoot": "libs/gh-auth/data-access-auth/src",
+  "prefix": "gh-dev",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/gh-auth/data-access-auth"],
+      "options": {
+        "jestConfig": "libs/gh-auth/data-access-auth/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/gh-auth/data-access-auth/src/**/*.ts",
+          "libs/gh-auth/data-access-auth/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/nn-notes/feature-note-list",
+  "sourceRoot": "libs/nn-notes/feature-note-list/src",
+  "prefix": "gh-dev",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/nn-notes/feature-note-list"],
+      "options": {
+        "jestConfig": "libs/nn-notes/feature-note-list/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/nn-notes/feature-note-list/src/**/*.ts",
+          "libs/nn-notes/feature-note-list/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

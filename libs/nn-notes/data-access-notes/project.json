@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/nn-notes/data-access-notes",
+  "sourceRoot": "libs/nn-notes/data-access-notes/src",
+  "prefix": "gh-dev",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/nn-notes/data-access-notes"],
+      "options": {
+        "jestConfig": "libs/nn-notes/data-access-notes/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/nn-notes/data-access-notes/src/**/*.ts",
+          "libs/nn-notes/data-access-notes/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
