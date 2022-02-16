@@ -7,6 +7,8 @@
     "nn-notes-data-access-notes": "libs/nn-notes/data-access-notes",
     "nn-notes-feature-note-crud": "libs/nn-notes/feature-note-crud",
     "nn-notes-feature-note-list": "libs/nn-notes/feature-note-list",
+    "nn-notes-node-note-feature-shell": "libs/nn-notes/node-note-feature-shell",
+    "nn-notes-ui-layout": "libs/nn-notes/ui-layout",
     "node-note": "apps/node-note",
     "node-note-e2e": "apps/node-note-e2e",
     "shared-ui-markdown-editor": "libs/shared/ui-markdown-editor",
