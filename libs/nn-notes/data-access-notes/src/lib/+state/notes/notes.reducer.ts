@@ -30,7 +30,16 @@ const notesReducer = createReducer(
   on(NotesActions.loadNotesSuccess, (state, { notes }) =>
     notesAdapter.setAll(notes, { ...state, loaded: true })
   ),
-  on(NotesActions.loadNotesFailure, (state, { error }) => ({ ...state, error }))
+  on(NotesActions.loadNotesFailure, (state, { error }) => ({
+    ...state,
+    error,
+  })),
+  on(NotesActions.addNoteSuccess, (state, { note }) =>
+    notesAdapter.addOne(note, { ...state })
+  ),
+  on(NotesActions.addNoteFailure, (state, { error }) => {
+    return { ...state, error: error.message };
+  })
 );
 
 export function reducer(state: State | undefined, action: Action) {

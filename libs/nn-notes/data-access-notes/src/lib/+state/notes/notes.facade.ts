@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { select, Store, Action } from '@ngrx/store';
 
 import * as NotesActions from './notes.actions';
+import { NotesEntity } from './notes.models';
 import * as NotesFeature from './notes.reducer';
 import * as NotesSelectors from './notes.selectors';
 
@@ -14,6 +15,7 @@ export class NotesFacade {
   loaded$ = this.store.pipe(select(NotesSelectors.getNotesLoaded));
   allNotes$ = this.store.pipe(select(NotesSelectors.getAllNotes));
   selectedNotes$ = this.store.pipe(select(NotesSelectors.getSelected));
+  notesError$ = this.store.pipe(select(NotesSelectors.getNotesError));
 
   constructor(private readonly store: Store) {}
 
@@ -23,5 +25,9 @@ export class NotesFacade {
    */
   init() {
     this.store.dispatch(NotesActions.init());
+  }
+
+  addNode(note: NotesEntity) {
+    this.store.dispatch(NotesActions.addNote({ note }));
   }
 }

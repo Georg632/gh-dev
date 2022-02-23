@@ -1,1 +1,30 @@
-<p>note-overview works!</p>
+<h1>Notes List</h1>
+<div>
+  <div>ID:</div>
+  <input #noteId type="number" />
+  <div>Text:</div>
+  <input #noteText />
+</div>
+<button (click)="add(noteId.value, noteText.value)">Add</button>
+
+<div *ngIf="notesError$ | async; let err" style="color: red">
+  Error: {{ err }}
+</div>
+
+<table *ngIf="loaded$ | async">
+  <tr>
+    <th>ID</th>
+    <th>Text</th>
+  </tr>
+  <tr *ngFor="let node of notesList$ | async">
+    <td>{{ node.id }}</td>
+    <td>{{ node.text }}</td>
+  </tr>
+</table>
+
+<!-- <div *ngIf="loaded$ | async">
+  <div *ngFor="let node of notesList$ | async">
+    <span>{{ node.id }}</span>
+    <span>{{ node.text }}</span>
+  </div>
+</div> -->

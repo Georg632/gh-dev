@@ -12,3 +12,18 @@ export const loadNotesFailure = createAction(
   '[Notes/API] Load Notes Failure',
   props<{ error: any }>()
 );
+
+export const addNote = createAction(
+  '[Notes/API] Add Note',
+  props<{ note: NotesEntity }>()
+);
+
+export const addNoteSuccess = createAction(
+  '[Notes/API] Add Note Success',
+  props<{ note: NotesEntity }>()
+);
+
+export const addNoteFailure = createAction(
+  '[Notes/API] Add Note Failure',
+  props<{ error: Error }>()
+);

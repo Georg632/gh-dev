@@ -3,5 +3,5 @@
  */
 export interface NotesEntity {
   id: string | number; // Primary ID
-  name: string;
+  text: string;
 }
