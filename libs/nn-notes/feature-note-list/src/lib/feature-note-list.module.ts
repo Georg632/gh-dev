@@ -7,12 +7,12 @@ import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
-    path: 'overview',
+    path: '',
     component: NoteOverviewComponent,
   },
   {
     path: '**',
-    redirectTo: 'overview',
+    redirectTo: '',
   },
 ];
 
