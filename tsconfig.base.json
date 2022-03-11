@@ -37,6 +37,7 @@
         "libs/nn-notes/node-note-feature-shell/src/index.ts"
       ],
       "@gh-dev/nn-notes/ui-layout": ["libs/nn-notes/ui-layout/src/index.ts"],
+      "@gh-dev/shared/ui-gh-grid": ["libs/shared/ui-gh-grid/src/index.ts"],
       "@gh-dev/shared/ui-markdown-editor": [
         "libs/shared/ui-markdown-editor/src/index.ts"
       ],

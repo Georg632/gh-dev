@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/ui-gh-grid",
+  "sourceRoot": "libs/shared/ui-gh-grid/src",
+  "prefix": "gh-dev",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/ui-gh-grid"],
+      "options": {
+        "jestConfig": "libs/shared/ui-gh-grid/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/ui-gh-grid/src/**/*.ts",
+          "libs/shared/ui-gh-grid/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

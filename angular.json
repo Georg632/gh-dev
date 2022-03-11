@@ -11,6 +11,7 @@
     "nn-notes-ui-layout": "libs/nn-notes/ui-layout",
     "node-note": "apps/node-note",
     "node-note-e2e": "apps/node-note-e2e",
+    "shared-ui-gh-grid": "libs/shared/ui-gh-grid",
     "shared-ui-markdown-editor": "libs/shared/ui-markdown-editor",
     "shared-ui-markdown-viewer": "libs/shared/ui-markdown-viewer",
     "shared-ui-quill-editor": "libs/shared/ui-quill-editor"
