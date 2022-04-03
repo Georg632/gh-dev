@@ -9,18 +9,16 @@ import { lastValueFrom, Observable } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NoteOverviewComponent implements OnInit {
-  loaded$!: Observable<boolean>;
-  notesList$!: Observable<NotesEntity[]>;
-  notesError$!: Observable<string | null | undefined>;
+  loaded$: Observable<boolean> = this.notesFacade.loaded$;
+  notesList$: Observable<NotesEntity[]> = this.notesFacade.allNotes$;
+  notesError$: Observable<string | null | undefined> =
+    this.notesFacade.notesError$;
 
-  constructor(private notesFacade: NotesFacade) {}
-
-  ngOnInit() {
+  constructor(private notesFacade: NotesFacade) {
     this.notesFacade.init();
-    this.loaded$ = this.notesFacade.loaded$;
-    this.notesList$ = this.notesFacade.allNotes$;
-    this.notesError$ = this.notesFacade.notesError$;
   }
+
+  ngOnInit() {}
 
   check() {
     this.notesList$.subscribe((n) => console.log(n));

@@ -2,14 +2,7 @@ import { Injectable } from '@angular/core';
 import { createEffect, Actions, ofType } from '@ngrx/effects';
 import { Store } from '@ngrx/store';
 import { fetch } from '@nrwl/angular';
-import {
-  catchError,
-  map,
-  of,
-  switchMap,
-  throwError,
-  withLatestFrom,
-} from 'rxjs';
+import { catchError, concatMap, of, throwError, withLatestFrom } from 'rxjs';
 
 import * as NotesActions from './notes.actions';
 import { State } from './notes.reducer';
@@ -37,17 +30,21 @@ export class NotesEffects {
     this.actions$.pipe(
       ofType(NotesActions.addNote),
       withLatestFrom(this.store$.select(NotesSelectors.getAllNotes)),
-      switchMap(([action, latestAllNotes]) => {
-        if (
-          latestAllNotes &&
-          latestAllNotes.find((n) => n.id == action.note.id)
-        )
-          return throwError(() => new Error('Duplicate ID'));
+      concatMap(([action, latestAllNotes]) => {
+        return of(null).pipe(
+          concatMap(() => {
+            if (
+              latestAllNotes &&
+              latestAllNotes.find((n) => n.id == action.note.id)
+            )
+              return throwError(() => new Error('Duplicate ID'));
 
-        return of(NotesActions.addNoteSuccess(action));
-      }),
-      catchError((error) => {
-        return of(NotesActions.addNoteFailure({ error }));
+            return of(NotesActions.addNoteSuccess(action));
+          }),
+          catchError((error) => {
+            return of(NotesActions.addNoteFailure({ error }));
+          })
+        );
       })
     )
   );
