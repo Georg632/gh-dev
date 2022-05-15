@@ -18,6 +18,9 @@
       "@gh-dev/gh-auth/data-access-auth": [
         "libs/gh-auth/data-access-auth/src/index.ts"
       ],
+      "@gh-dev/gh-auth/feature-custom-reactions-login": [
+        "libs/gh-auth/feature-custom-reactions-login/src/index.ts"
+      ],
       "@gh-dev/gh-auth/feature-login-user": [
         "libs/gh-auth/feature-login-user/src/index.ts"
       ],

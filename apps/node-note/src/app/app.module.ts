@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
@@ -12,6 +13,7 @@ import { NodeNoteFeatureShellModule } from '@gh-dev/nn-notes/node-note-feature-s
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     StoreModule.forRoot(
       {},
       {

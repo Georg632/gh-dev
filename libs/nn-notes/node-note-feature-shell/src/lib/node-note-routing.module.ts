@@ -14,14 +14,14 @@ const routes: Routes = [
             (m) => m.FeatureNoteListModule
           ),
       },
-      // {
-      //   path: 'auth',
-      //   loadChildren: () =>
-      //     import('@gh-dev/gh-auth/feature-login-user').then(
-      //       (m) => m.FeatureLoginUserModule
-      //     ),
-      // },
-      { path: '**', redirectTo: 'notelist' },
+      {
+        path: 'auth',
+        loadChildren: () =>
+          import('@gh-dev/gh-auth/feature-custom-reactions-login').then(
+            (m) => m.FeatureCustomReactionsLoginModule
+          ),
+      },
+      { path: '**', redirectTo: 'auth' },
     ],
   },
 ];
