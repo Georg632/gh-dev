@@ -40,12 +40,11 @@
         "libs/nn-notes/node-note-feature-shell/src/index.ts"
       ],
       "@gh-dev/nn-notes/ui-layout": ["libs/nn-notes/ui-layout/src/index.ts"],
-      "@gh-dev/shared/ui-gh-grid": ["libs/shared/ui-gh-grid/src/index.ts"],
+      "@gh-dev/shared/ui-dynamic-dialog": [
+        "libs/shared/ui-dynamic-dialog/src/index.ts"
+      ],
       "@gh-dev/shared/ui-markdown-editor": [
         "libs/shared/ui-markdown-editor/src/index.ts"
-      ],
-      "@gh-dev/shared/ui-markdown-viewer": [
-        "libs/shared/ui-markdown-viewer/src/index.ts"
       ],
       "@gh-dev/shared/ui-quill-editor": [
         "libs/shared/ui-quill-editor/src/index.ts"

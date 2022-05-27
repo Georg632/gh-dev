@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'shared-ui-markdown-viewer',
+  displayName: 'shared-ui-dynamic-dialog',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/shared/ui-markdown-viewer',
+  coverageDirectory: '../../../coverage/libs/shared/ui-dynamic-dialog',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

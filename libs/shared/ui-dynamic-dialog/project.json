@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/ui-dynamic-dialog",
+  "sourceRoot": "libs/shared/ui-dynamic-dialog/src",
+  "prefix": "gh-dev",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/ui-dynamic-dialog"],
+      "options": {
+        "jestConfig": "libs/shared/ui-dynamic-dialog/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/ui-dynamic-dialog/src/**/*.ts",
+          "libs/shared/ui-dynamic-dialog/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
