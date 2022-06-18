@@ -21,12 +21,6 @@
       "@gh-dev/gh-auth/feature-custom-reactions-login": [
         "libs/gh-auth/feature-custom-reactions-login/src/index.ts"
       ],
-      "@gh-dev/gh-auth/feature-login-user": [
-        "libs/gh-auth/feature-login-user/src/index.ts"
-      ],
-      "@gh-dev/gh-auth/ui-user-pw-form": [
-        "libs/gh-auth/ui-user-pw-form/src/index.ts"
-      ],
       "@gh-dev/nn-notes/data-access-notes": [
         "libs/nn-notes/data-access-notes/src/index.ts"
       ],
@@ -40,9 +34,6 @@
         "libs/nn-notes/node-note-feature-shell/src/index.ts"
       ],
       "@gh-dev/nn-notes/ui-layout": ["libs/nn-notes/ui-layout/src/index.ts"],
-      "@gh-dev/shared/ui-dynamic-dialog": [
-        "libs/shared/ui-dynamic-dialog/src/index.ts"
-      ],
       "@gh-dev/shared/ui-markdown-editor": [
         "libs/shared/ui-markdown-editor/src/index.ts"
       ],
